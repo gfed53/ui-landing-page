@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+*:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  background: url("../images/sopranos.jpg") no-repeat center center;
+  background-size: cover; }
+
+* {
+  color: white; }
+
+header {
+  text-align: center; }
+  header h1 {
+    margin-top: 3em; }
