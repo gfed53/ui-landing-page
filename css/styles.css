@@ -9,10 +9,15 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+html {
+  min-height: 100%;
+  background: none; }
+
 body {
-  background: url("../images/sopranos.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100%; }
+  min-height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 23, 23, 0.67)), to(rgba(25, 23, 23, 0.67))), url("../images/sopranos.jpg") no-repeat center center;
+  background: linear-gradient(rgba(25, 23, 23, 0.67), rgba(25, 23, 23, 0.67)), url("../images/sopranos.jpg") no-repeat center center;
+  background-size: cover; }
 
 .grid {
   z-index: 1; }
@@ -61,10 +66,14 @@ header {
         -ms-flex: 2;
             flex: 2;
     text-align: center; }
+    #cta .cta-inner button, #cta .cta-inner i {
+      -webkit-transition: 200ms ease-in-out all;
+      transition: 200ms ease-in-out all; }
     #cta .cta-inner button {
       background-color: white;
       color: #232323;
       padding: 1em;
+      font-family: 'Droid Sans', sans-serif;
       font-size: 1.2em;
       border: none;
       cursor: pointer; }
@@ -86,3 +95,10 @@ header {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; } }
+
+@media screen and (min-width: 1024px) {
+  #cta button:hover {
+    background-color: #711314;
+    color: white; }
+  #cta i:hover {
+    color: #711314; } }

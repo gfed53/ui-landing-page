@@ -6,10 +6,13 @@
 	.cta-inner
 		flex: 2
 		text-align: center
+		button, i
+			transition: 200ms ease-in-out all
 		button
 			background-color: white
 			color: $black
 			padding: 1em
+			font-family: 'Droid Sans', sans-serif
 			font-size: 1.2em
 			border: none
 			cursor: pointer
@@ -27,3 +30,11 @@
 		flex-flow: row wrap
 		.cta-inner
 			flex: 1
+
+@media screen and ($desktop)
+	#cta
+		button:hover
+			background-color: $red
+			color: white
+		i:hover
+			color: $red
